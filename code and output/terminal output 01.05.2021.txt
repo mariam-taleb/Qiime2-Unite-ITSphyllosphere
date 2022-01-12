@@ -1,0 +1,1465 @@
+(base) mbtaleb@DESKTOP-LIHKFBO:~$ cp ~/qiime2-testd/classifier.qza ~/
+(base) mbtaleb@DESKTOP-LIHKFBO:~$ conda update conda
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/mbtaleb/miniconda3
+
+  added / updated specs:
+    - conda
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    brotlipy-0.7.0             |py39h3811e60_1003         342 KB  conda-forge
+    certifi-2021.10.8          |   py39hf3d152e_1         145 KB  conda-forge
+    cffi-1.15.0                |   py39h4bc2ebd_0         227 KB  conda-forge
+    charset-normalizer-2.0.9   |     pyhd8ed1ab_0          34 KB  conda-forge
+    conda-4.11.0               |   py39hf3d152e_0        16.8 MB  conda-forge
+    conda-package-handling-1.7.3|   py39h3811e60_1        1005 KB  conda-forge
+    idna-3.1                   |     pyhd3deb0d_0          52 KB  conda-forge
+    libidn2-2.3.2              |       h7f98852_0          98 KB  conda-forge
+    libunistring-0.9.10        |       h7f98852_0         1.4 MB  conda-forge
+    pycosat-0.6.3              |py39h3811e60_1009         107 KB  conda-forge
+    pysocks-1.7.1              |   py39hf3d152e_4          28 KB  conda-forge
+    python-3.9.9               |h543edf9_0_cpython        27.4 MB  conda-forge
+    python_abi-3.9             |           2_cp39           4 KB  conda-forge
+    requests-2.26.0            |     pyhd8ed1ab_1          52 KB  conda-forge
+    ruamel_yaml-0.15.80        |py39h3811e60_1006         268 KB  conda-forge
+    setuptools-60.2.0          |   py39hf3d152e_0         1.0 MB  conda-forge
+    wget-1.20.3                |       ha35d2d1_1         815 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        49.7 MB
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              conda-forge/linux-64::bzip2-1.0.8-h7f98852_4
+  colorama           conda-forge/noarch::colorama-0.4.4-pyh9f0ad1d_0
+  gettext            conda-forge/linux-64::gettext-0.19.8.1-h73d1719_1008
+  libidn2            conda-forge/linux-64::libidn2-2.3.2-h7f98852_0
+  libnsl             conda-forge/linux-64::libnsl-2.0.0-h7f98852_0
+  libunistring       conda-forge/linux-64::libunistring-0.9.10-h7f98852_0
+  libuuid            conda-forge/linux-64::libuuid-2.32.1-h7f98852_1000
+  libzlib            conda-forge/linux-64::libzlib-1.2.11-h36c2ea0_1013
+  pip                conda-forge/noarch::pip-21.3.1-pyhd8ed1ab_0
+  python_abi         conda-forge/linux-64::python_abi-3.9-2_cp39
+  wheel              conda-forge/noarch::wheel-0.37.1-pyhd8ed1ab_0
+
+The following packages will be REMOVED:
+
+  libstdcxx-ng-9.3.0-hd4cf53a_17
+
+The following packages will be UPDATED:
+
+  certifi            pkgs/main::certifi-2021.10.8-py39h06a~ --> conda-forge::certifi-2021.10.8-py39hf3d152e_1
+  cffi                pkgs/main::cffi-1.14.6-py39h400218f_0 --> conda-forge::cffi-1.15.0-py39h4bc2ebd_0
+  charset-normalizer pkgs/main::charset-normalizer-2.0.4-p~ --> conda-forge::charset-normalizer-2.0.9-pyhd8ed1ab_0
+  ld_impl_linux-64   pkgs/main::ld_impl_linux-64-2.35.1-h7~ --> conda-forge::ld_impl_linux-64-2.36.1-hea4e1c9_2
+  libffi                   pkgs/main::libffi-3.3-he6710b0_2 --> conda-forge::libffi-3.4.2-h7f98852_5
+  libgcc-ng          pkgs/main::libgcc-ng-9.3.0-h5101ec6_17 --> conda-forge::libgcc-ng-11.2.0-h1d223b6_11
+  libgomp              pkgs/main::libgomp-9.3.0-h5101ec6_17 --> conda-forge::libgomp-11.2.0-h1d223b6_11
+  openssl              pkgs/main::openssl-1.1.1l-h7f8727e_0 --> conda-forge::openssl-3.0.0-h7f98852_2
+  pycosat            pkgs/main::pycosat-0.6.3-py39h27cfd23~ --> conda-forge::pycosat-0.6.3-py39h3811e60_1009
+  pysocks            pkgs/main::pysocks-1.7.1-py39h06a4308~ --> conda-forge::pysocks-1.7.1-py39hf3d152e_4
+  python                 pkgs/main::python-3.9.5-h12debd9_4 --> conda-forge::python-3.9.9-h543edf9_0_cpython
+  requests           pkgs/main::requests-2.26.0-pyhd3eb1b0~ --> conda-forge::requests-2.26.0-pyhd8ed1ab_1
+  setuptools         pkgs/main::setuptools-58.0.4-py39h06a~ --> conda-forge::setuptools-60.2.0-py39hf3d152e_0
+  sqlite                pkgs/main::sqlite-3.36.0-hc218d9a_0 --> conda-forge::sqlite-3.37.0-h9cd32fc_0
+  tk                        pkgs/main::tk-8.6.11-h1ccaba5_0 --> conda-forge::tk-8.6.11-h27826a3_1
+  wget                    pkgs/main::wget-1.20.1-h20c2e04_0 --> conda-forge::wget-1.20.3-ha35d2d1_1
+  xz                         pkgs/main::xz-5.2.5-h7b6447c_0 --> conda-forge::xz-5.2.5-h516909a_1
+  zlib                    pkgs/main::zlib-1.2.11-h7b6447c_3 --> conda-forge::zlib-1.2.11-h36c2ea0_1013
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  _libgcc_mutex           pkgs/main::_libgcc_mutex-0.1-main --> conda-forge::_libgcc_mutex-0.1-conda_forge
+  _openmp_mutex                                   pkgs/main --> conda-forge
+  brotlipy           pkgs/main::brotlipy-0.7.0-py39h27cfd2~ --> conda-forge::brotlipy-0.7.0-py39h3811e60_1003
+  ca-certificates    pkgs/main::ca-certificates-2021.10.26~ --> conda-forge::ca-certificates-2021.10.8-ha878542_0
+  conda              pkgs/main::conda-4.11.0-py39h06a4308_0 --> conda-forge::conda-4.11.0-py39hf3d152e_0
+  conda-package-han~ pkgs/main::conda-package-handling-1.7~ --> conda-forge::conda-package-handling-1.7.3-py39h3811e60_1
+  idna                     pkgs/main::idna-3.3-pyhd3eb1b0_0 --> conda-forge::idna-3.1-pyhd3deb0d_0
+  ncurses                 pkgs/main::ncurses-6.3-h7f8727e_2 --> conda-forge::ncurses-6.2-h58526e2_4
+  pycparser          pkgs/main::pycparser-2.21-pyhd3eb1b0_0 --> conda-forge::pycparser-2.21-pyhd8ed1ab_0
+  pyopenssl          pkgs/main::pyopenssl-21.0.0-pyhd3eb1b~ --> conda-forge::pyopenssl-21.0.0-pyhd8ed1ab_0
+  readline               pkgs/main::readline-8.1-h27cfd23_0 --> conda-forge::readline-8.1-h46c0cb4_0
+  ruamel_yaml        pkgs/main::ruamel_yaml-0.15.100-py39h~ --> conda-forge::ruamel_yaml-0.15.80-py39h3811e60_1006
+  six                    pkgs/main::six-1.16.0-pyhd3eb1b0_0 --> conda-forge::six-1.16.0-pyh6c4a22f_0
+  tqdm                  pkgs/main::tqdm-4.62.3-pyhd3eb1b0_1 --> conda-forge::tqdm-4.62.3-pyhd8ed1ab_0
+  tzdata                 pkgs/main::tzdata-2021e-hda174b7_0 --> conda-forge::tzdata-2021e-he74cb21_0
+  urllib3            pkgs/main::urllib3-1.26.7-pyhd3eb1b0_0 --> conda-forge::urllib3-1.26.7-pyhd8ed1ab_0
+  yaml                     pkgs/main::yaml-0.2.5-h7b6447c_0 --> conda-forge::yaml-0.2.5-h516909a_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+libunistring-0.9.10  | 1.4 MB    | ################################################################################################################################################################################################ | 100%
+brotlipy-0.7.0       | 342 KB    | ################################################################################################################################################################################################ | 100%
+requests-2.26.0      | 52 KB     | ################################################################################################################################################################################################ | 100%
+certifi-2021.10.8    | 145 KB    | ################################################################################################################################################################################################ | 100%
+wget-1.20.3          | 815 KB    | ################################################################################################################################################################################################ | 100%
+python-3.9.9         | 27.4 MB   | ################################################################################################################################################################################################ | 100%
+idna-3.1             | 52 KB     | ################################################################################################################################################################################################ | 100%
+ruamel_yaml-0.15.80  | 268 KB    | ################################################################################################################################################################################################ | 100%
+python_abi-3.9       | 4 KB      | ################################################################################################################################################################################################ | 100%
+charset-normalizer-2 | 34 KB     | ################################################################################################################################################################################################ | 100%
+conda-package-handli | 1005 KB   | ################################################################################################################################################################################################ | 100%
+pycosat-0.6.3        | 107 KB    | ################################################################################################################################################################################################ | 100%
+cffi-1.15.0          | 227 KB    | ################################################################################################################################################################################################ | 100%
+libidn2-2.3.2        | 98 KB     | ################################################################################################################################################################################################ | 100%
+conda-4.11.0         | 16.8 MB   | ################################################################################################################################################################################################ | 100%
+setuptools-60.2.0    | 1.0 MB    | ################################################################################################################################################################################################ | 100%
+pysocks-1.7.1        | 28 KB     | ################################################################################################################################################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(base) mbtaleb@DESKTOP-LIHKFBO:~$ conda update packages
+
+PackageNotInstalledError: Package is not installed in prefix.
+  prefix: /home/mbtaleb/miniconda3
+  package name: packages
+
+
+(base) mbtaleb@DESKTOP-LIHKFBO:~$
+(base) mbtaleb@DESKTOP-LIHKFBO:~$ conda activate qiime2-2021.11
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~$ cd ~/qiime2_all
+-bash: cd: /home/mbtaleb/qiime2_all: No such file or directory
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~$ cd ~/qiime2-all
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ cp -r ~/casava-18-paired-end-demultiplexed ~/qiime2_all/
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ cp ~/mapping.txt ~/qiime2-all
+cp: cannot stat '/home/mbtaleb/mapping.txt': No such file or directory
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ cp /mnt/c/Users/maria/OneDrive/Documents/Dissertation/2_its2_vitis/mapping.txt ~/
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ cp ~/mapping.txt ~/qiime2-all
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ time qiime tools import  --type 'SampleData[PairedEndSequencesWithQuality]' \
+--input-> --input-path casava-18-paired-end-demultiplexed \
+> --input-format CasavaOneEightSingleLanePerSampleDirFmt \
+> --output-path demux-paired-end.qza --verbose
+Usage: qiime tools import [OPTIONS]
+
+  Import data to create a new QIIME 2 Artifact. See https://docs.qiime2.org/
+  for usage examples and details on the file types and associated semantic
+  types that can be imported.
+
+Options:
+  --type TEXT             The semantic type of the artifact that will be
+                          created upon importing. Use --show-importable-types
+                          to see what importable semantic types are available
+                          in the current deployment.                [required]
+  --input-path PATH       Path to file or directory that should be imported.
+                                                                    [required]
+  --output-path ARTIFACT  Path where output artifact should be written.
+                                                                    [required]
+  --input-format TEXT     The format of the data to be imported. If not
+                          provided, data must be in the format expected by the
+                          semantic type provided via --type.
+  --show-importable-types Show the semantic types that can be supplied to
+                          --type to import data into an artifact.
+  --show-importable-formats
+                          Show formats that can be supplied to --input-format
+                          to import data into an artifact.
+  --help                  Show this message and exit.
+
+                    There was a problem with the command:
+ (1/1?) no such option: --verbose
+
+real    0m0.085s
+user    0m0.035s
+sys     0m0.019s
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ time qiime tools import  --type 'SampleData[PairedEndSequencesWithQuality]' --input-path casava-18-paired-end-demultiplexed --input-format CasavaOneEightSingleLanePerSampleDirFmt --output-path demux-paired-end.qza
+Usage: qiime tools import [OPTIONS]
+
+  Import data to create a new QIIME 2 Artifact. See https://docs.qiime2.org/
+  for usage examples and details on the file types and associated semantic
+  types that can be imported.
+
+Options:
+  --type TEXT             The semantic type of the artifact that will be
+                          created upon importing. Use --show-importable-types
+                          to see what importable semantic types are available
+                          in the current deployment.                [required]
+  --input-path PATH       Path to file or directory that should be imported.
+                                                                    [required]
+  --output-path ARTIFACT  Path where output artifact should be written.
+                                                                    [required]
+  --input-format TEXT     The format of the data to be imported. If not
+                          provided, data must be in the format expected by the
+                          semantic type provided via --type.
+  --show-importable-types Show the semantic types that can be supplied to
+                          --type to import data into an artifact.
+  --show-importable-formats
+                          Show formats that can be supplied to --input-format
+                          to import data into an artifact.
+  --help                  Show this message and exit.
+
+                    There was a problem with the command:
+ (1/1) Invalid value for '--input-path': Path 'casava-18-paired-end-
+  demultiplexed' does not exist.
+
+real    0m0.030s
+user    0m0.029s
+sys     0m0.000s
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ ls
+mapping.txt  q2_unite_pipeline_draft.Rmd  q2pipeline-v1.Rmd
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ cp -r ~/casava-18-paired-end-demultiplexed ~/qiime2-all
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ ^C
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ cp -r ~/casava-18-paired-end-demultiplexed ~/qiime2-all/
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ ls
+casava-18-paired-end-demultiplexed  mapping.txt  q2_unite_pipeline_draft.Rmd  q2pipeline-v1.Rmd
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ time qiime tools import  --type 'SampleData[PairedEndSequencesWithQuality]' --input-path casava-18-paired-end-demultiplexed --input-format CasavaOneEightSingleLanePerSampleDirFmt --output-path demux-paired-end.qza
+Imported casava-18-paired-end-demultiplexed as CasavaOneEightSingleLanePerSampleDirFmt to demux-paired-end.qza
+
+real    5m41.386s
+user    4m57.764s
+sys     0m14.429s
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ qiime demux summarize --i-data demux-paired-end.qza \
+> --o-visualization sequences.qzv
+Saved Visualization to: sequences.qzv
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ qiime itsxpress
+Error: QIIME 2 has no plugin/command named 'itsxpress'.
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ conda config --add channels defaults
+Warning: 'defaults' already in 'channels' list, moving to the top
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ conda config --add channels conda-forge
+Warning: 'conda-forge' already in 'channels' list, moving to the top
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ conda config --add channels bioconda
+Warning: 'bioconda' already in 'channels' list, moving to the top
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ conda install -c bioconda itsxpress
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/mbtaleb/miniconda3/envs/qiime2-2021.11
+
+  added / updated specs:
+    - itsxpress
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    bbmap-38.93                |       he522d1c_0         9.0 MB  bioconda
+    biopython-1.79             |   py38h497a2fe_1         2.6 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        11.6 MB
+
+The following NEW packages will be INSTALLED:
+
+  bbmap              bioconda/linux-64::bbmap-38.93-he522d1c_0
+  biopython          conda-forge/linux-64::biopython-1.79-py38h497a2fe_1
+  itsxpress          bioconda/noarch::itsxpress-1.8.0-py_1
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+bbmap-38.93          | 9.0 MB    | ################################################################################################################################################################################################## | 100%
+biopython-1.79       | 2.6 MB    | ################################################################################################################################################################################################## | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ qiime dev refresh-cache
+QIIME is caching your current deployment for improved performance. This may take a few moments and should only happen once per deployment.
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ qiime itsxpress
+Error: QIIME 2 has no plugin/command named 'itsxpress'.
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ pip install q2-itsxpress
+Collecting q2-itsxpress
+  Using cached q2_itsxpress-1.8.0-py3-none-any.whl (13 kB)
+Requirement already satisfied: itsxpress>=1.8.0 in /home/mbtaleb/miniconda3/envs/qiime2-2021.11/lib/python3.8/site-packages (from q2-itsxpress) (1.8.0)
+Requirement already satisfied: pandas in /home/mbtaleb/miniconda3/envs/qiime2-2021.11/lib/python3.8/site-packages (from q2-itsxpress) (1.2.5)
+Requirement already satisfied: qiime2 in /home/mbtaleb/miniconda3/envs/qiime2-2021.11/lib/python3.8/site-packages (from q2-itsxpress) (2021.11.0)
+Requirement already satisfied: biopython>=1.60 in /home/mbtaleb/miniconda3/envs/qiime2-2021.11/lib/python3.8/site-packages (from itsxpress>=1.8.0->q2-itsxpress) (1.79)
+Requirement already satisfied: python-dateutil>=2.7.3 in /home/mbtaleb/miniconda3/envs/qiime2-2021.11/lib/python3.8/site-packages (from pandas->q2-itsxpress) (2.8.2)
+Requirement already satisfied: pytz>=2017.3 in /home/mbtaleb/miniconda3/envs/qiime2-2021.11/lib/python3.8/site-packages (from pandas->q2-itsxpress) (2021.3)
+Requirement already satisfied: numpy>=1.16.5 in /home/mbtaleb/miniconda3/envs/qiime2-2021.11/lib/python3.8/site-packages (from pandas->q2-itsxpress) (1.21.4)
+Requirement already satisfied: six>=1.5 in /home/mbtaleb/miniconda3/envs/qiime2-2021.11/lib/python3.8/site-packages (from python-dateutil>=2.7.3->pandas->q2-itsxpress) (1.16.0)
+Installing collected packages: q2-itsxpress
+Successfully installed q2-itsxpress-1.8.0
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ qiime itsxpress
+QIIME is caching your current deployment for improved performance. This may take a few moments and should only happen once per deployment.
+Usage: qiime itsxpress [OPTIONS] COMMAND [ARGS]...
+
+  Description: ITSxpress trims amplicon reads down to their ITS region.
+  ITSxpress is designed to support the calling of exact sequence variants
+  rather than OTUs. This newer method of sequence error-correction requires
+  quality score data from each sequence, so each input sequence must be
+  trimmed. ITSxpress makes this possible by taking FASTQ data, de-
+  replicating the sequences then identifying the start and stop sites using
+  HMMSearch. Results are parsed and the trimmed files are returned. The ITS
+  1, ITS2 or the entire ITS region including the 5.8s rRNAgene can be
+  selected. ALL requires very long reads so it is not routinelyused with
+  Illumina data. ITSxpress uses the hmm models from ITSx so results are
+  comparable.
+
+  Plugin website: https://github.com/USDA-ARS-GBRU/q2_itsxpress
+  ITSxpress: https://github.com/USDA-ARS-GBRU/itsxpress
+
+  Getting user support: Please post to the QIIME 2 forum for help with this
+  plugin: https://forum.qiime2.org
+
+Options:
+  --version            Show the version and exit.
+  --example-data PATH  Write example data and exit.
+  --citations          Show citations and exit.
+  --help               Show this message and exit.
+
+Commands:
+  trim-pair                  Trim paired-end reads, output merged reads for
+                             use with Deblur
+
+  trim-pair-output-unmerged  Trim paired-end reads, output unmerged reads for
+                             use with Dada2
+
+  trim-single                Trim single-end reads
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ time qiime itsxpress trim-pair-output-unmerged --i-per-sample-sequences demux-paired-end.qza --p-region ITS1 --p-taxa F --p-threads 4 --o-trimmed itsx_trimmed.qza --verbose
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_azskhjs7/seq.fq.gz 100%
+26628489 nt in 166753 seqs, min 35, max 576, avg 160
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 10331 Size min 1, max 6657, avg 16.1
+Singletons: 4829, 2.9% of seqs, 46.7% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_7z8097j7/seq.fq.gz 100%
+26283703 nt in 167045 seqs, min 35, max 589, avg 157
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 14289 Size min 1, max 6987, avg 11.7
+Singletons: 8313, 5.0% of seqs, 58.2% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_3eirdfnt/seq.fq.gz 100%
+20983134 nt in 139882 seqs, min 35, max 522, avg 150
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 10920 Size min 1, max 3169, avg 12.8
+Singletons: 5281, 3.8% of seqs, 48.4% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_odue55qg/seq.fq.gz 100%
+30343752 nt in 210393 seqs, min 35, max 578, avg 144
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 13009 Size min 1, max 4672, avg 16.2
+Singletons: 6013, 2.9% of seqs, 46.2% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_2cdcv0bp/seq.fq.gz 100%
+31057840 nt in 205400 seqs, min 35, max 590, avg 151
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 14453 Size min 1, max 4786, avg 14.2
+Singletons: 6943, 3.4% of seqs, 48.0% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_jlzehchg/seq.fq.gz 100%
+23695950 nt in 153140 seqs, min 35, max 585, avg 155
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 10880 Size min 1, max 6678, avg 14.1
+Singletons: 5280, 3.4% of seqs, 48.5% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_0x902ns0/seq.fq.gz 100%
+14771606 nt in 77291 seqs, min 35, max 536, avg 191
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 7962 Size min 1, max 3008, avg 9.7
+Singletons: 4154, 5.4% of seqs, 52.2% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_3zyaoflg/seq.fq.gz 100%
+22763529 nt in 133792 seqs, min 35, max 530, avg 170
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 5829 Size min 1, max 10485, avg 23.0
+Singletons: 2722, 2.0% of seqs, 46.7% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_xnuq22yo/seq.fq.gz 100%
+14154697 nt in 101617 seqs, min 35, max 488, avg 139
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 7713 Size min 1, max 3485, avg 13.2
+Singletons: 3825, 3.8% of seqs, 49.6% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_nr3fh_i2/seq.fq.gz 100%
+28164532 nt in 173281 seqs, min 35, max 578, avg 163
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 20484 Size min 1, max 5646, avg 8.5
+Singletons: 13574, 7.8% of seqs, 66.3% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_colsxw1i/seq.fq.gz 100%
+30199592 nt in 226963 seqs, min 35, max 546, avg 133
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 14979 Size min 1, max 3439, avg 15.2
+Singletons: 7153, 3.2% of seqs, 47.8% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_j7ins70l/seq.fq.gz 100%
+22988722 nt in 162180 seqs, min 35, max 533, avg 142
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 11483 Size min 1, max 3408, avg 14.1
+Singletons: 5453, 3.4% of seqs, 47.5% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_7xgbaa00/seq.fq.gz 100%
+26381201 nt in 189209 seqs, min 35, max 562, avg 139
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 11906 Size min 1, max 6291, avg 15.9
+Singletons: 5645, 3.0% of seqs, 47.4% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_154tgrdw/seq.fq.gz 100%
+23224058 nt in 159226 seqs, min 35, max 514, avg 146
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 10300 Size min 1, max 2292, avg 15.5
+Singletons: 4905, 3.1% of seqs, 47.6% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_p2k3si8p/seq.fq.gz 100%
+21158487 nt in 151786 seqs, min 35, max 504, avg 139
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 11082 Size min 1, max 1477, avg 13.7
+Singletons: 5149, 3.4% of seqs, 46.5% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_btqc2c62/seq.fq.gz 100%
+21925252 nt in 149815 seqs, min 35, max 581, avg 146
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 10528 Size min 1, max 3198, avg 14.2
+Singletons: 5146, 3.4% of seqs, 48.9% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_xgzycugr/seq.fq.gz 100%
+1382943 nt in 8918 seqs, min 35, max 450, avg 155
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 727 Size min 1, max 3351, avg 12.3
+Singletons: 375, 4.2% of seqs, 51.6% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_1ievrihf/seq.fq.gz 100%
+30667643 nt in 199122 seqs, min 35, max 567, avg 154
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 16488 Size min 1, max 5061, avg 12.1
+Singletons: 9197, 4.6% of seqs, 55.8% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_ekm9hv6a/seq.fq.gz 100%
+23963056 nt in 157956 seqs, min 35, max 528, avg 152
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 13083 Size min 1, max 4341, avg 12.1
+Singletons: 6708, 4.2% of seqs, 51.3% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_ov_wmswg/seq.fq.gz 100%
+32194674 nt in 238023 seqs, min 35, max 579, avg 135
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 13927 Size min 1, max 5049, avg 17.1
+Singletons: 6226, 2.6% of seqs, 44.7% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_pb1xk8i1/seq.fq.gz 100%
+27430736 nt in 172245 seqs, min 35, max 535, avg 159
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 11739 Size min 1, max 8933, avg 14.7
+Singletons: 5994, 3.5% of seqs, 51.1% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_e5m48vla/seq.fq.gz 100%
+33535055 nt in 224370 seqs, min 35, max 576, avg 149
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 14923 Size min 1, max 3706, avg 15.0
+Singletons: 6903, 3.1% of seqs, 46.3% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_4hzkh6h2/seq.fq.gz 100%
+23485670 nt in 173761 seqs, min 35, max 582, avg 135
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 11750 Size min 1, max 3930, avg 14.8
+Singletons: 5690, 3.3% of seqs, 48.4% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_754i_t0m/seq.fq.gz 100%
+26851224 nt in 161255 seqs, min 35, max 529, avg 167
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 12846 Size min 1, max 4149, avg 12.6
+Singletons: 6481, 4.0% of seqs, 50.5% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_qv5gcdpn/seq.fq.gz 100%
+28129449 nt in 191573 seqs, min 35, max 579, avg 147
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 12427 Size min 1, max 3629, avg 15.4
+Singletons: 5779, 3.0% of seqs, 46.5% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_kybhdcw2/seq.fq.gz 100%
+26289716 nt in 183108 seqs, min 35, max 591, avg 144
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 8917 Size min 1, max 11089, avg 20.5
+Singletons: 5788, 3.2% of seqs, 64.9% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_ssm62tn5/seq.fq.gz 100%
+26771040 nt in 204941 seqs, min 35, max 501, avg 131
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 13287 Size min 1, max 3712, avg 15.4
+Singletons: 5976, 2.9% of seqs, 45.0% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_w05xvcni/seq.fq.gz 100%
+14381189 nt in 100577 seqs, min 35, max 451, avg 143
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 7036 Size min 1, max 4722, avg 14.3
+Singletons: 3495, 3.5% of seqs, 49.7% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_xw4gbg6j/seq.fq.gz 100%
+32427118 nt in 229665 seqs, min 35, max 551, avg 141
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 15509 Size min 1, max 2284, avg 14.8
+Singletons: 7328, 3.2% of seqs, 47.2% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_xeyl9dn5/seq.fq.gz 100%
+3414112 nt in 22779 seqs, min 35, max 388, avg 150
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 2904 Size min 1, max 506, avg 7.8
+Singletons: 1539, 6.8% of seqs, 53.0% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_7lnr420i/seq.fq.gz 100%
+27811766 nt in 190518 seqs, min 35, max 541, avg 146
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 10797 Size min 1, max 4773, avg 17.6
+Singletons: 4796, 2.5% of seqs, 44.4% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_voiw3eet/seq.fq.gz 100%
+22639993 nt in 150019 seqs, min 35, max 574, avg 151
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 10487 Size min 1, max 8676, avg 14.3
+Singletons: 4998, 3.3% of seqs, 47.7% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_ifyz79e5/seq.fq.gz 100%
+34069276 nt in 228176 seqs, min 35, max 536, avg 149
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 12947 Size min 1, max 7475, avg 17.6
+Singletons: 6007, 2.6% of seqs, 46.4% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_3ovpdbzf/seq.fq.gz 100%
+23484961 nt in 149876 seqs, min 35, max 567, avg 157
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 12059 Size min 1, max 2713, avg 12.4
+Singletons: 6819, 4.5% of seqs, 56.5% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_2mf26gtw/seq.fq.gz 100%
+25110845 nt in 164933 seqs, min 35, max 480, avg 152
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 10414 Size min 1, max 5345, avg 15.8
+Singletons: 4992, 3.0% of seqs, 47.9% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_kanty1b7/seq.fq.gz 100%
+20506129 nt in 136142 seqs, min 35, max 535, avg 151
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 11974 Size min 1, max 3912, avg 11.4
+Singletons: 6076, 4.5% of seqs, 50.7% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_do3a9oz_/seq.fq.gz 100%
+32088532 nt in 207230 seqs, min 35, max 580, avg 155
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 12861 Size min 1, max 4613, avg 16.1
+Singletons: 6103, 2.9% of seqs, 47.5% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_vddkg8mi/seq.fq.gz 100%
+23305366 nt in 172730 seqs, min 35, max 542, avg 135
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 10100 Size min 1, max 3133, avg 17.1
+Singletons: 4349, 2.5% of seqs, 43.1% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_pwevyx60/seq.fq.gz 100%
+28461873 nt in 203959 seqs, min 35, max 548, avg 140
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 11250 Size min 1, max 5225, avg 18.1
+Singletons: 4983, 2.4% of seqs, 44.3% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_ujk7xt_7/seq.fq.gz 100%
+23652196 nt in 166621 seqs, min 35, max 533, avg 142
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 11535 Size min 1, max 3153, avg 14.4
+Singletons: 5603, 3.4% of seqs, 48.6% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_knevoonh/seq.fq.gz 100%
+21467330 nt in 125124 seqs, min 35, max 588, avg 172
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 12347 Size min 1, max 5029, avg 10.1
+Singletons: 6304, 5.0% of seqs, 51.1% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_7mwnldyo/seq.fq.gz 100%
+22086519 nt in 144715 seqs, min 35, max 552, avg 153
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 14073 Size min 1, max 5290, avg 10.3
+Singletons: 8629, 6.0% of seqs, 61.3% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_n1_b7hq5/seq.fq.gz 100%
+16426610 nt in 108991 seqs, min 35, max 521, avg 151
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 7843 Size min 1, max 2193, avg 13.9
+Singletons: 3944, 3.6% of seqs, 50.3% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_qpnvwx99/seq.fq.gz 100%
+21469968 nt in 147472 seqs, min 35, max 520, avg 146
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 10592 Size min 1, max 5071, avg 13.9
+Singletons: 5271, 3.6% of seqs, 49.8% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_q13n361_/seq.fq.gz 100%
+21961411 nt in 146883 seqs, min 35, max 534, avg 150
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 10645 Size min 1, max 4767, avg 13.8
+Singletons: 5429, 3.7% of seqs, 51.0% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_hb0beyax/seq.fq.gz 100%
+21659396 nt in 141644 seqs, min 35, max 569, avg 153
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 7684 Size min 1, max 6038, avg 18.4
+Singletons: 3629, 2.6% of seqs, 47.2% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_harwo7wn/seq.fq.gz 100%
+12089905 nt in 77616 seqs, min 35, max 532, avg 156
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 6211 Size min 1, max 1980, avg 12.5
+Singletons: 2959, 3.8% of seqs, 47.6% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_o26_b6b4/seq.fq.gz 100%
+17373825 nt in 108379 seqs, min 35, max 538, avg 160
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 9676 Size min 1, max 3787, avg 11.2
+Singletons: 4948, 4.6% of seqs, 51.1% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_6_i1t3bg/seq.fq.gz 100%
+29164914 nt in 194053 seqs, min 35, max 533, avg 150
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 12342 Size min 1, max 3308, avg 15.7
+Singletons: 6002, 3.1% of seqs, 48.6% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_gll3fmvk/seq.fq.gz 100%
+32563594 nt in 167393 seqs, min 35, max 582, avg 195
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 17654 Size min 1, max 4901, avg 9.5
+Singletons: 9851, 5.9% of seqs, 55.8% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_c93lae33/seq.fq.gz 100%
+25287377 nt in 165834 seqs, min 35, max 548, avg 152
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 12002 Size min 1, max 2864, avg 13.8
+Singletons: 6011, 3.6% of seqs, 50.1% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_9gex35px/seq.fq.gz 100%
+30388785 nt in 195699 seqs, min 35, max 586, avg 155
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 12384 Size min 1, max 4009, avg 15.8
+Singletons: 5927, 3.0% of seqs, 47.9% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_txabf_sw/seq.fq.gz 100%
+33265367 nt in 235995 seqs, min 35, max 549, avg 141
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 12707 Size min 1, max 5070, avg 18.6
+Singletons: 5754, 2.4% of seqs, 45.3% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_o0fi2jt_/seq.fq.gz 100%
+28317260 nt in 197478 seqs, min 35, max 532, avg 143
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 8057 Size min 1, max 12330, avg 24.5
+Singletons: 3650, 1.8% of seqs, 45.3% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_12u5zpe6/seq.fq.gz 100%
+22707672 nt in 147106 seqs, min 35, max 517, avg 154
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 11474 Size min 1, max 1876, avg 12.8
+Singletons: 5684, 3.9% of seqs, 49.5% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_v97de87i/seq.fq.gz 100%
+28167190 nt in 185068 seqs, min 35, max 568, avg 152
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 12913 Size min 1, max 4656, avg 14.3
+Singletons: 6301, 3.4% of seqs, 48.8% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_ek4be7j7/seq.fq.gz 100%
+14075581 nt in 98223 seqs, min 35, max 485, avg 143
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 7602 Size min 1, max 3529, avg 12.9
+Singletons: 3746, 3.8% of seqs, 49.3% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_enbom42q/seq.fq.gz 100%
+27006903 nt in 182952 seqs, min 35, max 580, avg 148
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 17480 Size min 1, max 3209, avg 10.5
+Singletons: 10936, 6.0% of seqs, 62.6% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_8pf2162e/seq.fq.gz 100%
+29091333 nt in 246559 seqs, min 35, max 592, avg 118
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 10713 Size min 1, max 2187, avg 23.0
+Singletons: 4918, 2.0% of seqs, 45.9% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_fpfqn8jx/seq.fq.gz 100%
+40378791 nt in 280068 seqs, min 35, max 584, avg 144
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 20022 Size min 1, max 3886, avg 14.0
+Singletons: 9224, 3.3% of seqs, 46.1% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_i1gu7jz9/seq.fq.gz 100%
+28884251 nt in 196395 seqs, min 35, max 590, avg 147
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 17138 Size min 1, max 2125, avg 11.5
+Singletons: 8470, 4.3% of seqs, 49.4% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_1gh27hpx/seq.fq.gz 100%
+29684789 nt in 202368 seqs, min 35, max 582, avg 147
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 16444 Size min 1, max 4382, avg 12.3
+Singletons: 7988, 3.9% of seqs, 48.6% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_yrq2r8ze/seq.fq.gz 100%
+28773124 nt in 195675 seqs, min 35, max 587, avg 147
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 14235 Size min 1, max 2702, avg 13.7
+Singletons: 6677, 3.4% of seqs, 46.9% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_qvof8mm8/seq.fq.gz 100%
+19157236 nt in 140293 seqs, min 35, max 590, avg 137
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 13265 Size min 1, max 1630, avg 10.6
+Singletons: 6613, 4.7% of seqs, 49.9% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_h5eudavb/seq.fq.gz 100%
+31623061 nt in 213804 seqs, min 35, max 564, avg 148
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 17192 Size min 1, max 3645, avg 12.4
+Singletons: 8196, 3.8% of seqs, 47.7% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress___yitp59/seq.fq.gz 100%
+32736781 nt in 216416 seqs, min 35, max 586, avg 151
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 26471 Size min 1, max 2111, avg 8.2
+Singletons: 16541, 7.6% of seqs, 62.5% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress__zjqmj86/seq.fq.gz 100%
+25195621 nt in 172286 seqs, min 35, max 576, avg 146
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 15747 Size min 1, max 1741, avg 10.9
+Singletons: 7614, 4.4% of seqs, 48.4% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_ln1gdpjz/seq.fq.gz 100%
+33808075 nt in 230904 seqs, min 35, max 565, avg 146
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 19810 Size min 1, max 4021, avg 11.7
+Singletons: 9647, 4.2% of seqs, 48.7% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_rzisp6g9/seq.fq.gz 100%
+34328994 nt in 231660 seqs, min 35, max 571, avg 148
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 20854 Size min 1, max 4038, avg 11.1
+Singletons: 10333, 4.5% of seqs, 49.5% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_x9dhm8hm/seq.fq.gz 100%
+33993069 nt in 223005 seqs, min 35, max 583, avg 152
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 18508 Size min 1, max 4157, avg 12.0
+Singletons: 8899, 4.0% of seqs, 48.1% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_u20rs380/seq.fq.gz 100%
+30841499 nt in 199944 seqs, min 35, max 570, avg 154
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 18569 Size min 1, max 2420, avg 10.8
+Singletons: 8694, 4.3% of seqs, 46.8% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_nqo0y243/seq.fq.gz 100%
+8252708 nt in 89836 seqs, min 35, max 552, avg 92
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 3859 Size min 1, max 11898, avg 23.3
+Singletons: 2650, 2.9% of seqs, 68.7% of clusters
+
+vsearch v2.7.0_linux_x86_64, 7.7GB RAM, 12 cores
+https://github.com/torognes/vsearch
+
+Reading file /tmp/itsxpress_sxh_v85n/seq.fq.gz 100%
+19385584 nt in 154809 seqs, min 35, max 580, avg 125
+Masking 100%
+Sorting by abundance 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 20105 Size min 1, max 4408, avg 7.7
+Singletons: 12667, 8.2% of seqs, 63.0% of clusters
+
+Saved SampleData[PairedEndSequencesWithQuality] to: itsx_trimmed.qza
+
+real    95m5.394s
+user    200m53.771s
+sys     5m27.031s
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ qiime demux summarize --i-data itsx_trimmed.qza --o-visualization trimmed_sequences.qzv
+Saved Visualization to: trimmed_sequences.qzv
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ qiime dada2 denoise-single --i-demultiplexed-seqs itsx_trimmed.qza --p-trunc-len-f 220 --p-trunc-len-r 190 --o-table table.qza --o-representative-sequences rep-seqs.qza --o-denoising-stats denoising-stats.qza
+Usage: qiime dada2 denoise-single [OPTIONS]
+
+  This method denoises single-end sequences, dereplicates them, and filters
+  chimeras.
+
+Inputs:
+  --i-demultiplexed-seqs ARTIFACT SampleData[SequencesWithQuality |
+    PairedEndSequencesWithQuality]
+                         The single-end demultiplexed sequences to be
+                         denoised.                                  [required]
+Parameters:
+  --p-trunc-len INTEGER  Position at which sequences should be truncated due
+                         to decrease in quality. This truncates the 3' end of
+                         the of the input sequences, which will be the bases
+                         that were sequenced in the last cycles. Reads that
+                         are shorter than this value will be discarded. If 0
+                         is provided, no truncation or length filtering will
+                         be performed                               [required]
+  --p-trim-left INTEGER  Position at which sequences should be trimmed due to
+                         low quality. This trims the 5' end of the of the
+                         input sequences, which will be the bases that were
+                         sequenced in the first cycles.           [default: 0]
+  --p-max-ee NUMBER      Reads with number of expected errors higher than
+                         this value will be discarded.          [default: 2.0]
+  --p-trunc-q INTEGER    Reads are truncated at the first instance of a
+                         quality score less than or equal to this value. If
+                         the resulting read is then shorter than `trunc-len`,
+                         it is discarded.                         [default: 2]
+  --p-pooling-method TEXT Choices('independent', 'pseudo')
+                         The method used to pool samples for denoising.
+                         "independent": Samples are denoised independently.
+                         "pseudo": The pseudo-pooling method is used to
+                         approximate pooling of samples. In short, samples are
+                         denoised independently once, ASVs detected in at
+                         least 2 samples are recorded, and samples are
+                         denoised independently a second time, but this time
+                         with prior knowledge of the recorded ASVs and thus
+                         higher sensitivity to those ASVs.
+                                                      [default: 'independent']
+  --p-chimera-method TEXT Choices('consensus', 'pooled', 'none')
+                         The method used to remove chimeras. "none": No
+                         chimera removal is performed. "pooled": All reads are
+                         pooled prior to chimera detection. "consensus":
+                         Chimeras are detected in samples individually, and
+                         sequences found chimeric in a sufficient fraction of
+                         samples are removed.           [default: 'consensus']
+  --p-min-fold-parent-over-abundance NUMBER
+                         The minimum abundance of potential parents of a
+                         sequence being tested as chimeric, expressed as a
+                         fold-change versus the abundance of the sequence
+                         being tested. Values should be greater than or equal
+                         to 1 (i.e. parents should be more abundant than the
+                         sequence being tested). This parameter has no effect
+                         if chimera-method is "none".           [default: 1.0]
+  --p-n-threads INTEGER  The number of threads to use for multithreaded
+                         processing. If 0 is provided, all available cores
+                         will be used.                            [default: 1]
+  --p-n-reads-learn INTEGER
+                         The number of reads to use when training the error
+                         model. Smaller numbers will result in a shorter run
+                         time but a less reliable error model.
+                                                            [default: 1000000]
+  --p-hashed-feature-ids / --p-no-hashed-feature-ids
+                         If true, the feature ids in the resulting table will
+                         be presented as hashes of the sequences defining each
+                         feature. The hash will always be the same for the
+                         same sequence so this allows feature tables to be
+                         merged across runs of this method. You should only
+                         merge tables if the exact same parameters are used
+                         for each run.                         [default: True]
+Outputs:
+  --o-table ARTIFACT FeatureTable[Frequency]
+                         The resulting feature table.               [required]
+  --o-representative-sequences ARTIFACT FeatureData[Sequence]
+                         The resulting feature sequences. Each feature in the
+                         feature table will be represented by exactly one
+                         sequence.                                  [required]
+  --o-denoising-stats ARTIFACT SampleData[DADA2Stats]
+                                                                    [required]
+Miscellaneous:
+  --output-dir PATH      Output unspecified results to a directory
+  --verbose / --quiet    Display verbose output to stdout and/or stderr
+                         during execution of this action. Or silence output if
+                         execution is successful (silence is golden).
+  --example-data PATH    Write example data and exit.
+  --citations            Show citations and exit.
+  --help                 Show this message and exit.
+
+                  There were some problems with the command:
+ (1/2?) no such option: --p-trunc-len-f  Did you mean --p-trunc-len?
+ (2/2?) no such option: --p-trunc-len-r  Did you mean --p-trunc-len?
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ time qiime dada2 denoise-paired --i-demultiplexed-seqs itsx_trimmed.qza --p-trunc-len-r 220 --p-trunc-len-f 190 --o-table table.qza --o-representative-sequences rep-seqs.qza --o-denoising-stats denoising-stats.qza
+Saved FeatureTable[Frequency] to: table.qza
+Saved FeatureData[Sequence] to: rep-seqs.qza
+Saved SampleData[DADA2Stats] to: denoising-stats.qza
+
+real    14m9.615s
+user    14m40.550s
+sys     0m3.219s
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ qiime feature-table summarize --i-table table.qza --o-visualization tableviz.qzv
+Saved Visualization to: tableviz.qzv
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ cp ~/classifier.qza ~/qiime2-all/
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ ls
+casava-18-paired-end-demultiplexed  demux-paired-end.qza  itsx_trimmed.qza  q2_unite_pipeline_draft.Rmd  rep-seqs.qza   table.qza     trimmed_sequences.qzv
+classifier.qza                      denoising-stats.qza   mapping.txt       q2pipeline-v1.Rmd            sequences.qzv  tableviz.qzv
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ time qiime feature-classifier classify-sklearn --i-classifier classifier.qza --i-reads rep-seqs.qza --p-reads-per-batch 500 --o-classification taxonomy.qza --verbose
+Saved FeatureData[Taxonomy] to: taxonomy.qza
+
+real    6m19.607s
+user    6m8.313s
+sys     0m10.536s
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$ qiime taxa barplot --i-table table.qza  --i-taxonomy taxonomy.qza --m-metadata-file mapping.txt --o-visualization taxa-bar-plots.qzv
+Saved Visualization to: taxa-bar-plots.qzv
+(qiime2-2021.11) mbtaleb@DESKTOP-LIHKFBO:~/qiime2-all$
