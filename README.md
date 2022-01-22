@@ -26,8 +26,13 @@ Analyses were conducted in Linux using WSL2.
 ## Folder contents
 
 -Code and output: annotated code, .txt file with terminal output
+
 -extracted-feature-tables: data and provenance for OTU tables
+
 -extracted-rep-seqs: data and provenance for representative sequences
+
 -extracted-tax: data and provenance for taxonomy tables
+
 -summed outputs (qzv): .qzv files visualizing outputs along Qiime2 pipeline 
-   (Use view.qiime2.org to view contents) 
+  
+  (Use view.qiime2.org to view contents) 
