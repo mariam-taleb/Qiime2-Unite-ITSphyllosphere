@@ -24,5 +24,7 @@ analysis and data visualization in R. Downstream analysis will be published to G
 Analyses were conducted in Linux using WSL2.
 
 ## Folder contents
--code and output: annotated code, .txt file with terminal output
--
+
+-Code and output: annotated code, .txt file with terminal output
+-extracted-feature-tables: data and provenance for OTU tables
+-extracted-
