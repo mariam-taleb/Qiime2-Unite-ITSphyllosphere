@@ -1,7 +1,8 @@
 # 2017-ITS-q2-output
 
 
-##Study description 
+## Study description 
+
 This study seeks to describe the fungal epiphyte community structure & succession on
 two Vitis species disturbed by Spotted lanternfly honeydew. SLF-affected leaf 
 surfaces were sampled in 2017 over 9 weeks at a residential property in Berks Co., PA. 
@@ -10,7 +11,8 @@ composition of the fungal community. We expect to see deterministic, facultative
 sussession, wherein exposure to SLF honeydew makes fungal communities more similar to 
 one another, even between plant host species. 
 
-##project description
+## Project description
+
 QIIME2 is a decentralized microbiome analysis package. Here, it is used to conduct 
 initial bioinformatics analysis of Cassava1.8 formatted raw sequences from 73 samples.
 Sequences are imported as a QIIME artifact, trimmed with ITSxpress, then quality 
@@ -21,6 +23,6 @@ analysis and data visualization in R. Downstream analysis will be published to G
 
 Analyses were conducted in Linux using WSL2.
 
-##file contents
+## Folder contents
 -code and output: annotated code, .txt file with terminal output
 -
