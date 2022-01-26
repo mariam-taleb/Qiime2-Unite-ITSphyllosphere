@@ -12,6 +12,9 @@ to characterize the composition of the fungal community. We expect to see determ
 facultative sussession, wherein exposure to SLF honeydew makes fungal communities more 
 similar to one another, even between plant host species. 
 
+###https://github.com/mariam-taleb/ITS-Ailanthus-Spotted-Lanternfly is using the same 
+sequencing data, but bioinformatics were completed in the original QIIME pipeline.
+
 ## Project description
 
 QIIME2 is a decentralized microbiome analysis package. Here, it is used to conduct 
@@ -20,7 +23,7 @@ Sequences are imported as a QIIME artifact, trimmed with ITSxpress, then quality
 filtered, denoised and merged using DADA2. A classifier trained to the UNITE 8.3 
 dynamic threshold database was used to assign taxonomy. Reference sequences, a 
 taxonomy table, an OTU/ASV table, and metadata were then exported for statistical 
-analysis and data visualization in R. Downstream analysis will be published to GitHub 
+analysis and data visualization in R. Downstream analysis will be published to GitHub. 
 
 Analyses were conducted on machine with AMD Ryzen 5 5600X 6 core CPU, 3.7 GHz base 
 speed, with 16 GB RAM, 2667 MHz speed. Machine ran Windows 11, analyses were conducted
