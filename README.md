@@ -12,7 +12,7 @@ to characterize the composition of the fungal community. We expect to see determ
 facultative sussession, wherein exposure to SLF honeydew makes fungal communities more 
 similar to one another, even between plant host species. 
 
-###https://github.com/mariam-taleb/ITS-Ailanthus-Spotted-Lanternfly is using the same 
+! https://github.com/mariam-taleb/ITS-Ailanthus-Spotted-Lanternfly is using the same 
 sequencing data, but bioinformatics were completed in the original QIIME pipeline.
 
 ## Project description
